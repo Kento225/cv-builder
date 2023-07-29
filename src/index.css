@@ -1,0 +1,69 @@
+#root{
+    font-family: 'EB Garamond', serif;
+    display:flex;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.section{
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+    border-top: solid 1px black;
+}
+.section-name{
+    border-right: solid 2px black;
+    width: 30%;
+}
+.section-content{
+    width: 70%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+textarea{
+    width: 80%;
+    height: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0px;
+}
+.final-submit{
+    height: 60px;
+}
+.top-layer{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+.top-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    text-align: center;
+}

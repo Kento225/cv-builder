@@ -1,8 +1,5 @@
-# React + Vite
+A project for The Odin Project, this app will work as a CV template, where you enter info about your background and get a nice looking CV out of it.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It was my first time using React, this project helped me to grasp the basics like hooks, state and jsx syntax.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Here's the link to the app - https://cv-builder-odin.netlify.app/

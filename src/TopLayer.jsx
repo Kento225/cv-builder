@@ -1,4 +1,6 @@
 import { useState } from "react";
+import githubLogo from "./assets/icone-github-noir.png";
+import linkedInLogo from "./assets/linkedin-logo.png";
 
 export function TopLayer({ editing }) {
   const [name, setName] = useState("");
@@ -40,6 +42,7 @@ export function TopLayer({ editing }) {
               value={mobile}
             ></input>
             <label>Location</label>
+
             <input
               type="text"
               onChange={(e) => setLocation(e.target.value)}
@@ -49,13 +52,13 @@ export function TopLayer({ editing }) {
           <div className="top-column">
             <label>LinkedIn link</label>
             <input
-              type="text"
+              type="url"
               onChange={(e) => setLinkedin(e.target.value)}
               value={linkedin}
             ></input>
             <label>GitHub link</label>
             <input
-              type="text"
+              type="url"
               onChange={(e) => setGithub(e.target.value)}
               value={github}
             ></input>
@@ -79,15 +82,16 @@ export function TopLayer({ editing }) {
             </p>
           </div>
           <div className="right-column">
-            <a className="linkedin" href={linkedin}>
-              <img className="logo" src="src/assets/linkedin-logo.png"></img>
-            </a>
-            <a className="github" href={github}>
-              <img
-                className="logo"
-                src="src/assets/icone-github-noir.png"
-              ></img>
-            </a>
+            {linkedin ? (
+              <a className="linkedin" href={linkedin}>
+                <img className="logo" src={linkedInLogo}></img>
+              </a>
+            ) : null}
+            {github ? (
+              <a className="github" href={github}>
+                <img className="logo" src={githubLogo}></img>
+              </a>
+            ) : null}
           </div>
         </>
       )}
